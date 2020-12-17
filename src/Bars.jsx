@@ -28,6 +28,9 @@ export default function Bars() {
                 <div className="row" style={{ ...styles.flexCenter, ...styles.row }}>
                     <div className="spinner spinner-blink"></div>
                 </div>
+                <div className="row" style={{ ...styles.flexCenter, ...styles.row }}>
+                    <div className="spinner spinner-bounce-text"></div>
+                </div>
             </div>
         </div>
     );

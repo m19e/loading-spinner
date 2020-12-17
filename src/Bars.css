@@ -225,3 +225,45 @@
     -webkit-animation: glow 0.6s 0.2s infinite;
     animation: glow 0.6s 0.2s infinite;
 }
+
+/* like vertical text typing  */
+@-webkit-keyframes bounce-text {
+    0% {
+        height: 5px;
+        margin-bottom: 15px;
+    }
+    50% {
+        height: 20px;
+        margin-bottom: 0px;
+    }
+    100% {
+        height: 5px;
+        margin-bottom: 15px;
+    }
+}
+@keyframes bounce-text {
+    0% {
+        height: 5px;
+        margin-bottom: 15px;
+    }
+    50% {
+        height: 20px;
+        margin-bottom: 0px;
+    }
+    100% {
+        height: 5px;
+        margin-bottom: 15px;
+    }
+}
+.spinner-bounce-text {
+    -webkit-animation: bounce-top 0.6s ease 0.1s infinite;
+    animation: bounce-text 0.6s ease 0.1s infinite;
+}
+.spinner-bounce-text:before {
+    -webkit-animation: bounce-top 0.6s ease 0s infinite;
+    animation: bounce-text 0.6s ease 0.2s infinite;
+}
+.spinner-bounce-text:after {
+    -webkit-animation: bounce-top 0.6s ease 0.2s infinite;
+    animation: bounce-text 0.6s ease 0s infinite;
+}
