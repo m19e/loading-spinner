@@ -354,3 +354,159 @@
     animation: bounce-text-before 2.5s ease 1.5s infinite;
     height: 16px;
 }
+
+/* vertical text typing fast! */
+
+.text-spinner,
+.text-spinner:before,
+.text-spinner:after {
+    width: 4px;
+    height: 20px;
+    background-color: #00b285;
+    border-radius: 2px;
+}
+
+.text-spinner {
+    display: inline-block;
+    position: relative;
+}
+.text-spinner:before,
+.text-spinner:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0px;
+}
+.text-spinner:before {
+    left: -6px;
+}
+.text-spinner:after {
+    left: 6px;
+}
+
+@-webkit-keyframes text-fast-after {
+    0% {
+        height: 0px;
+        margin-bottom: 15px;
+    }
+    20% {
+        height: 16px;
+        margin-bottom: 0px;
+    }
+    80% {
+        height: 16px;
+        margin-bottom: 0px;
+        background-color: #00b285;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+@keyframes text-fast-after {
+    0% {
+        height: 0;
+        margin-bottom: 15px;
+    }
+    20% {
+        height: 16px;
+        margin-bottom: 0px;
+    }
+    80% {
+        height: 16px;
+        margin-bottom: 0px;
+        background-color: #00b285;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+.spinner-text-fast:after {
+    -webkit-animation: text-fast-after 1.5s 0.3s infinite ease-in;
+    animation: text-fast-after 1.5s 0.3s infinite ease-in;
+    top: 4px;
+    height: 16px;
+}
+
+@-webkit-keyframes text-fast {
+    0% {
+        height: 0px;
+        margin-bottom: 15px;
+    }
+    20% {
+        height: 20px;
+        margin-bottom: 0px;
+    }
+    80% {
+        height: 20px;
+        margin-bottom: 0px;
+        background-color: #00b285;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+@keyframes text-fast {
+    0% {
+        height: 0px;
+        margin-bottom: 20px;
+    }
+    20% {
+        height: 20px;
+        margin-bottom: 0px;
+    }
+    80% {
+        height: 20px;
+        margin-bottom: 0px;
+        background-color: #00b285;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+.spinner-text-fast {
+    -webkit-animation: text-fast 1.5s linear 0.6s infinite;
+    animation: text-fast 1.5s linear 0.6s infinite;
+}
+
+@-webkit-keyframes text-fast-before {
+    0% {
+        height: 0px;
+        margin-bottom: 15px;
+    }
+    20% {
+        height: 16px;
+        margin-bottom: 0px;
+    }
+    80% {
+        height: 16px;
+        margin-bottom: 0px;
+        background-color: #00b285;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+@keyframes text-fast-before {
+    0% {
+        height: 0px;
+        margin-bottom: 15px;
+    }
+    20% {
+        height: 16px;
+        margin-bottom: 0px;
+    }
+    80% {
+        height: 16px;
+        margin-bottom: 0px;
+        background-color: #00b285;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+.spinner-text-fast:before {
+    -webkit-animation: text-fast-before 1.5s 0.9s infinite ease-out;
+    animation: text-fast-before 1.5s 0.9s infinite ease-out;
+    height: 16px;
+}
