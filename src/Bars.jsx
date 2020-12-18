@@ -29,14 +29,10 @@ export default function Bars() {
                     <div className="spinner spinner-blink"></div>
                 </div> */}
                 <div className="row" style={{ ...styles.flexCenter, ...styles.row }}>
-                    {/* <div style={{ width: "90px", height: "90px" }}> */}
                     <div className="spinner spinner-bounce-text"></div>
-                    {/* </div> */}
                 </div>
                 <div className="row" style={{ ...styles.flexCenter, ...styles.row }}>
-                    {/* <div style={{ width: "90px", height: "90px" }}> */}
                     <div className="spinner text-spinner spinner-text-fast"></div>
-                    {/* </div> */}
                 </div>
             </div>
         </div>
